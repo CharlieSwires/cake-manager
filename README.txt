@@ -65,10 +65,13 @@ deploy
 RESTful
 -------
 
+<p>GET</p>
 <p>http://localhost:8887/cake-manager/init ---> loads from the url in the code</p>
 <p>http://localhost:8887/cake-manager/cake ---> returns db contents in JSON</p>
 <p>http://localhost:8887/cake-manager      ---> returns db contents in CSV file</p>
 
-<p>POST http://localhost:8887/cake-manager/cake --> adds cake given JSON body</p>
+<p>POST</p>
+<p>http://localhost:8887/cake-manager/cake ---> adds cake given JSON body</p>
+body = {"title":"...", "desc": "...", "image": "..."}
 
 Tested with postman
