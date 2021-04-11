@@ -29,13 +29,9 @@ Bonus points:
 Original Project Info
 =====================
 
-To run a server locally execute the following command:
-
-`mvn jetty:run`
-
 and access the following URL:
 
-`http://localhost:8282/`
+`http://localhost:8887/`
 
 Feel free to change how the project is run, but clear instructions must be given in README
 You can use any IDE you like, so long as the project can build and run with Maven or Gradle.
@@ -55,3 +51,13 @@ share it with us.
 Please also keep a log of the changes you make as a text file and provide this to us with your submission.
 
 Good luck!
+
+build
+-----
+<p>mvn package</p>
+
+deploy
+------
+<p>docker build --tag cake:latest .</p>
+<p>docker run --name container3 -d -p 8887:8080 cake:latest</p>
+
