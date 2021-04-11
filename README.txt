@@ -54,7 +54,7 @@ Good luck!
 
 build
 -----
-<p>mvn package</p>
+mvn package
 
 deploy
 ------
