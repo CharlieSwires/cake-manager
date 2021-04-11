@@ -31,7 +31,7 @@ Original Project Info
 
 and access the following URL:
 
-`http://localhost:8887/`
+`http://localhost:8887/cake-manager`
 
 Feel free to change how the project is run, but clear instructions must be given in README
 You can use any IDE you like, so long as the project can build and run with Maven or Gradle.
@@ -58,6 +58,17 @@ build
 
 deploy
 ------
+
 <p>docker build --tag cake:latest .</p>
 <p>docker run --name container3 -d -p 8887:8080 cake:latest</p>
 
+RESTful
+-------
+
+<p>http://localhost:8887/cake-manager/init ---> loads from the url in the code</p>
+<p>http://localhost:8887/cake-manager/cake ---> returns db contents in JSON</p>
+<p>http://localhost:8887/cake-manager      ---> returns db contents in CSV file</p>
+
+<p>POST http://localhost:8887/cake-manager/cake --> adds cake given JSON body</p>
+
+Tested with postman
