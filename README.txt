@@ -59,19 +59,19 @@ build
 deploy
 ------
 
-<p>docker build --tag cake:latest .</p>
-<p>docker run --name container3 -d -p 8887:8080 cake:latest</p>
+docker build --tag cake:latest .
+docker run --name container3 -d -p 8886:8080 cake:latest
 
 RESTful
 -------
 
-<p>GET</p>
-<p>http://localhost:8887/cake-manager/init ---> loads from the url in the code</p>
-<p>http://localhost:8887/cake-manager/cake ---> returns db contents in JSON</p>
-<p>http://localhost:8887/cake-manager      ---> returns db contents in CSV file</p>
+GET
+http://localhost:8886/cake-manager/init ---> loads from the url in the code
+http://localhost:8886/cake-manager/cake ---> returns db contents in JSON
+http://localhost:8886/cake-manager      ---> returns db contents in CSV file
 
-<p>POST</p>
-<p>http://localhost:8887/cake-manager/cake ---> adds cake given JSON body</p>
+POST
+http://localhost:8886/cake-manager/cake ---> adds cake given JSON body
 body = {"title":"...", "desc": "...", "image": "..."}
 
 Tested with postman
