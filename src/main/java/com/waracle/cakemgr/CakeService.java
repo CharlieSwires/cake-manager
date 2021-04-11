@@ -50,9 +50,9 @@ public class CakeService {
 
     public Boolean add(InputBean ib) {
         assert(ib != null);
-        assert(ib.getTitle() != null && !ib.getTitle().trim().isEmpty());
-        assert(ib.getDesc() != null && !ib.getDesc().trim().isEmpty());
-        assert(ib.getImage() != null && !ib.getImage().trim().isEmpty());
+        assert(ib.getTitle() != null && !(ib.getTitle().trim().isEmpty()));
+        assert(ib.getDesc() != null && !(ib.getDesc().trim().isEmpty()));
+        assert(ib.getImage() != null && !(ib.getImage().trim().isEmpty()));
         CakeEntity ce = new CakeEntity(ib.getTitle(), ib.getDesc(), ib.getImage());
         try{
             repo.save(ce);
